@@ -1,0 +1,4 @@
+interface:
+  display_name: "SQT 科学问题追踪"
+  short_description: "用自动排版的关键关系图配合精读正文和证据附录，保留问题判断与接续记录"
+  default_prompt: "使用 $sqt-read 阅读这篇论文，复用已核判断生成关键关系图，以简短正文和证据附录说明科学问题及回答边界。"

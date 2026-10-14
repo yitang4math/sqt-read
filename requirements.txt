@@ -1,0 +1,4 @@
+# PDF extraction / page rendering (optional if the host provides equivalent tools)
+PyMuPDF>=1.24,<2
+# Local PNG / SVG diagrams; missing dependency produces a Mermaid fallback
+Pillow>=10,<13

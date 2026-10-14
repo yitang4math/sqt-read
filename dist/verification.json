@@ -1,0 +1,68 @@
+{
+  "version": "0.5.1",
+  "baseline": "sqt-read-lab 0.5.1",
+  "checks": {
+    "baseline_script_compact.py": true,
+    "baseline_script_diagram.py": true,
+    "baseline_script_paper.py": true,
+    "baseline_script_report.py": true,
+    "baseline_reference_checks.md": true,
+    "baseline_reference_io.md": true,
+    "baseline_reference_presentation.md": true,
+    "baseline_reference_state.md": true,
+    "archive_no_private_inputs": true,
+    "archive_exactly_11_files": true,
+    "archive_matches_source": true,
+    "GLIC_png_backend": true,
+    "GLIC_no_warnings": true,
+    "GLIC_edge_count": true,
+    "GLIC_connected_overview": true,
+    "GLIC_no_overlap_overflow": true,
+    "GLIC_source_state_unchanged": true,
+    "GLIC_report_content_unchanged": true,
+    "GLIC_source_identity": true,
+    "RQI_png_backend": true,
+    "RQI_no_warnings": true,
+    "RQI_edge_count": true,
+    "RQI_connected_overview": true,
+    "RQI_no_overlap_overflow": true,
+    "RQI_source_state_unchanged": true,
+    "RQI_report_content_unchanged": true,
+    "RQI_source_identity": true,
+    "pdf_cli_inspect": true,
+    "pdf_cli_read": true
+  },
+  "pdf_inspect_keys": [
+    "command",
+    "coverage_note",
+    "metadata_unverified",
+    "pages",
+    "source",
+    "warnings"
+  ],
+  "pdf_read_keys": [
+    "command",
+    "continuation",
+    "coverage_note",
+    "requested_first_offset",
+    "requested_pages",
+    "segments",
+    "source",
+    "source_characters",
+    "status",
+    "warnings"
+  ],
+  "renders": {
+    "GLIC": {
+      "backend": "pillow",
+      "edges": 3,
+      "seconds": 0.23040840006433427
+    },
+    "RQI": {
+      "backend": "pillow",
+      "edges": 4,
+      "seconds": 0.2273237998597324
+    }
+  },
+  "passed": true
+}

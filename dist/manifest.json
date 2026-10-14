@@ -1,0 +1,21 @@
+{
+  "name": "sqt-read",
+  "version": "0.5.1",
+  "channel": "stable",
+  "baseline": "sqt-read-lab 0.5.1",
+  "archive": "sqt-read-v0.5.1.zip",
+  "sha256": "e0fc1ed5a650ea114dd29b731cba6156a44c89fe5d132175eef50a9eaa939996",
+  "files": {
+    "SKILL.md": "3312f716ccab8f5f23184af7e00050bac0eababf7da4f1e6e796654029b36f91",
+    "agents/openai.yaml": "a65357a8d87b547958a629cc00e04a10f23a7c539b587331e98320bf691929ff",
+    "references/checks.md": "013390440c2ef3626b0c50766f29808379b158b7f7b7e020c0ec3c1145ee8200",
+    "references/io.md": "ebd653c2f5c9cee801f3287204a7e701b670f8ce0e22ccd43cd8f09004650285",
+    "references/presentation.md": "0f7ed65db9a6a99909dd141c61df658b22efeba8f673eb0441e52774c848cb66",
+    "references/state.md": "c08b36408ca11f0c3fe8706b16919288cca96bd1085271225d441cc2a6ffb01b",
+    "requirements.txt": "437f01782f06d6a68ddbfcc43ddc6d702289e030602e2ab1ed3db88a93f39cb0",
+    "scripts/compact.py": "c1613c69686901a8cbf6c07179580181e53e097af971726edb8f09ba79b43748",
+    "scripts/diagram.py": "80cd97bd423f017f208eb669777d55f760df6d86bda4c24d404ecadba1faf010",
+    "scripts/paper.py": "65eefcd6b75a028bbb09ae8acc4aa0b59d7f4bbac6dbed556284e1a011e9d38a",
+    "scripts/report.py": "f2f91d9664b758f882cca335c34fd939bd3ad6948c1a402d6d21fc1e7e569114"
+  }
+}
