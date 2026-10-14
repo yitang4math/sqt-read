@@ -91,6 +91,7 @@ python scripts/report.py reading.state.json --out reading-text.md --layout text
 
 ```sh
 python -m unittest discover -s tests -v
+python tools/check_release.py
 python tools/build_release.py
 ```
 

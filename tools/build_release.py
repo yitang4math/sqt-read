@@ -17,10 +17,10 @@ def payload():
     return {p.relative_to(ROOT).as_posix(): p.read_bytes() for p in files}
 
 
-def main():
+def build(target):
     data = payload()
-    target = ROOT / 'dist'
-    target.mkdir(exist_ok=True)
+    target = Path(target)
+    target.mkdir(parents=True, exist_ok=True)
     package = target / ('sqt-read-v' + VERSION + '.zip')
     with zipfile.ZipFile(package, 'w', zipfile.ZIP_DEFLATED, compresslevel=9) as archive:
         for name, content in sorted(data.items()):
@@ -41,7 +41,11 @@ def main():
     }
     (target / 'manifest.json').write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     (target / 'SHA256SUMS').write_text(checksum + '  ' + package.name + '\n', encoding='utf-8')
-    print(json.dumps({'archive': str(package), 'files': len(data), 'sha256': checksum}))
+    return {'archive': str(package), 'files': len(data), 'sha256': checksum}
+
+
+def main():
+    print(json.dumps(build(ROOT / 'dist')))
 
 
 if __name__ == '__main__':
